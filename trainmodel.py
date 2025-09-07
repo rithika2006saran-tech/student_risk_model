@@ -9,7 +9,8 @@ df = pd.read_csv("student_data.csv")
 print(df.head())
 
 # Features (input for the model)
-X = df.drop(columns=["risk_status"])
+X = df.drop(columns=["risk_status", "student_id"])
+
 # Target (what we want to predict)
 y = df["risk_status"]
 
