@@ -1,5 +1,6 @@
 import joblib
 import pandas as pd
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix  # performance check
 
 #load trained model
 model = joblib.load("student_risk_model.pkl")
